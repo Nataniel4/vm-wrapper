@@ -1,0 +1,5 @@
+# macOS garbage
+.DS_Store
+
+# VSCode garbage
+.vscode
