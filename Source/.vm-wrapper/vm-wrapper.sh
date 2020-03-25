@@ -50,5 +50,5 @@ vmWrapperExec() {
 		exit 1
 	fi
 
-	ssh $VM_WRAPPER_SSH "if [ -d \"$vmWrapperGuestPath\" ]; then cd \"$vmWrapperGuestPath\"; else cd \"$VM_WRAPPER_GUEST_PATH\"; fi; $1 ${@:2}"
+	ssh -t $VM_WRAPPER_SSH "if [ -d \"$vmWrapperGuestPath\" ]; then cd \"$vmWrapperGuestPath\"; else cd \"$VM_WRAPPER_GUEST_PATH\"; fi; $1 ${@:2}"
 }
