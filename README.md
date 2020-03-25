@@ -2,7 +2,7 @@
 A magic tool to use command line programs from a VM like it was installed locally in your host system (using SSH).
 
 ## Installation
-Just add the files and folders from `Release` folder into the `/usr/local/bin` directory of you host system and set the ENV vars into your bash profile.
+Copy the files and folders from `Release` folder into the `/usr/local/bin` directory of you host system and set the ENV vars into your bash profile.
 ```sh
 cp -r Release/. /usr/local/bin
 ```

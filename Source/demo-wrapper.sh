@@ -7,7 +7,7 @@
 #
 
 # Import the vm-wrapper library
-source "$(dirname $0)/.vm-wrapper/vm-wrapper"
+source "$(dirname $0)/.vm-wrapper/vm-wrapper.sh"
 
 # Specify which commands are supported by this wrapper (required)
 supportedCommands=(
