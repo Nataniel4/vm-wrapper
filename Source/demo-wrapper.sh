@@ -14,4 +14,4 @@ supportedCommands=(
 	'echo',
 )
 
-vmWrapperExec "echo" "$@"
+vmWrapperExec "echo" $@

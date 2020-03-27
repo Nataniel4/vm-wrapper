@@ -22,12 +22,12 @@ vmWrapperPath() {
 
 isSupportedCommand() {
 
-	if [[ -z "$supportedCommands" ]]; then
+	if [[ -z $supportedCommands ]]; then
 		echo "Error: Missing supported commands, please add them in your wrapper."
 		exit 1
 	fi
 
-	if [[ "${supportedCommands[@]}" =~ "$1" ]]; then
+	if [[ ${supportedCommands[@]} =~ $1 ]]; then
    	true
 	else
 		false
@@ -40,13 +40,13 @@ vmWrapperExec() {
 
 	# Exit when the vmWrapperPath vm ssh env is not set
 	if [[ -z $VM_WRAPPER_SSH ]]; then
-		echo "Error: VM_WRAPPER_SSH env var not set"
+		echo 'Error: VM_WRAPPER_SSH env var not set'
 		exit 1
 	fi
 
 	# Exit when the received vmWrapperPath command is not supported
 	if ! isSupportedCommand $1; then
-		echo "Error: Unsupported command: '$1'".
+		echo 'Error: Unsupported command: "$1"'.
 		exit 1
 	fi
 
