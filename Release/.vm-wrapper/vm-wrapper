@@ -46,7 +46,7 @@ vmWrapperExec() {
 
 	# Exit when the received vmWrapperPath command is not supported
 	if ! isSupportedCommand $1; then
-		echo 'Error: Unsupported command: "$1"'.
+		echo Error: "Unsupported command: \"$1\"".
 		exit 1
 	fi
 
